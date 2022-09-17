@@ -1,0 +1,5 @@
+train/images/case0031_slice000.npy train/labels/case0031_slice000.npy
+train/images/case0031_slice001.npy train/labels/case0031_slice001.npy
+train/images/case0031_slice002.npy train/labels/case0031_slice002.npy
+train/images/case0031_slice003.npy train/labels/case0031_slice003.npy
+train/images/case0031_slice004.npy train/labels/case0031_slice004.npy

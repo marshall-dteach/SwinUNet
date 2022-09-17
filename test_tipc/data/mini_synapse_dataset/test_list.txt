@@ -1,0 +1,2 @@
+test/images/case0008.npy test/labels/case0008.npy
+test/images/case0001.npy test/labels/case0001.npy
