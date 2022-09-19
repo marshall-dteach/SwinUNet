@@ -96,7 +96,7 @@ bash test_tipc/test_train_inference_python.sh test_tipc/configs/transunet/train_
 
 测试结果如截图所示：
 
-<img src=./contrib/MedicalSeg/test_tipc/data/tipc_result.png></img>
+![image-20220919114348934](README.assets/image-20220919114348934.png)
 
 
 ## 6.代码结构与详细说明
