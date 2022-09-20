@@ -16,8 +16,6 @@ Synapse数据集下载地址:
 
 [https://aistudio.baidu.com/aistudio/datasetdetail/165793](https://aistudio.baidu.com/aistudio/datasetdetail/165793)
 
-其中R50+ViT-B_16.npz为预训练模型。
-
 
 ## 4.环境依赖
 PaddlePaddle == 2.3.1
