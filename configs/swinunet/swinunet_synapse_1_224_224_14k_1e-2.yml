@@ -1,7 +1,7 @@
 _base_: '../_base_/global_configs.yml'
 
 batch_size: 24
-iters: 13900
+iters: 14000
 
 model:
   type: SwinUNet
@@ -54,8 +54,7 @@ optimizer:
 
 lr_scheduler:
   type: PolynomialDecay
-  decay_steps: 13950
-  learning_rate: 0.01
+  learning_rate: 0.05
   end_lr: 0
   power: 0.9
 

@@ -124,12 +124,7 @@ class SwinUNet(nn.Layer):
         elif isinstance(m, nn.LayerNorm):
             zeros_(m.bias)
             ones_(m.weight)
-        elif isinstance(m, nn.Conv2D):
-            fan_out = m._kernel_size[0] * m._kernel_size[1] * m._out_channels
-            fan_out //= m._groups
-            paddle_init.Normal(0, math.sqrt(2.0 / fan_out))(m.weight)
-            if m.bias is not None:
-                zeros_(m.bias)
+
 
     #Dencoder and Skip connection
     def forward_up_features(self, x, x_downsample):
