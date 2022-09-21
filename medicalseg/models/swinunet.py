@@ -5,7 +5,7 @@ import paddle.nn as nn
 import paddle.nn.initializer as paddle_init
 
 from medicalseg.cvlibs import manager
-from paddleseg.models.backbones.swin_transformer import SwinTransformerBlock
+from medicalseg.models.backbones.swin_transformer import SwinTransformerBlock
 from medicalseg.utils import load_pretrained_model
 from medicalseg.models.backbones.transformer_utils import *
 
@@ -285,6 +285,7 @@ class BasicLayer_up(nn.Layer):
         self.blocks = nn.LayerList([
             SwinTransformerBlock(
                 dim=dim,
+                input_resolution = self.input_resolution,
                 num_heads=num_heads,
                 window_size=window_size,
                 shift_size=0 if (i % 2 == 0) else window_size // 2,
@@ -337,8 +338,8 @@ class BasicLayer_up(nn.Layer):
         huns = -100.0 * paddle.ones_like(attn_mask)
         attn_mask = huns * (attn_mask != 0).astype("float32")
         for blk in self.blocks:
-            blk.H, blk.W = self.input_resolution
-            x = blk(x, None)
+            #blk.H, blk.W = self.input_resolution
+            x = blk(x)
         if self.upsample is not None:
             x = self.upsample(x)
         return x
