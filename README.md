@@ -96,7 +96,7 @@ bash test_tipc/test_train_inference_python.sh test_tipc/configs/transunet/train_
 
 测试结果如截图所示：
 
-![image-20220919114348934](README.assets/image-20220919114348934.png)
+![image-20220921121504372](README.assets/image-20220921121504372.png)
 
 ## 6.代码结构与详细说明
 
