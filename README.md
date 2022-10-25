@@ -89,9 +89,9 @@ pip3 install ./dist/auto_log-1.2.0-py3-none-any.whl
 ```
 
 ```shell
-bash test_tipc/prepare.sh test_tipc/configs/transunet/train_infer_python.txt "lite_train_lite_infer"
+bash test_tipc/prepare.sh test_tipc/configs/swinunet/train_infer_python.txt "lite_train_lite_infer"
 
-bash test_tipc/test_train_inference_python.sh test_tipc/configs/transunet/train_infer_python.txt "lite_train_lite_infer"
+bash test_tipc/test_train_inference_python.sh test_tipc/configs/swinunet/train_infer_python.txt "lite_train_lite_infer"
 ```
 
 测试结果如截图所示：
